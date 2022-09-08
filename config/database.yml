@@ -1,13 +1,13 @@
 
 
-# default: &default
-#   adapter: sqlite3
-#   timeout: 3000
+default: &default
+  adapter: sqlite3
+  timeout: 3000
 
-# development:
-#   <<: *default
-#   database: db/school-dev.sqlite3
+development:
+  <<: *default
+  database: db/eventsdatabase.sqlite3
 
-# production:
-#   <<: *default
-#   database: db/school-prod.sqlite3
+production:
+  <<: *default
+  database: db/eventsdatabase.sqlite3

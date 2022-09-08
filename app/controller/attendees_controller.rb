@@ -3,4 +3,3 @@ class AttendeesController < Sinatra::Base
         "attendees here"
     end
 end
-Footer

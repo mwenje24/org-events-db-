@@ -3,4 +3,3 @@ class EventController < Sinatra::Base
         "events are here"
     end
 end
-Footer

@@ -3,4 +3,3 @@ class OrganiserController < Sinatra::Base
         "Organisers here"
     end
 end
-Footer
