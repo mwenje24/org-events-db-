@@ -17,3 +17,7 @@ gem 'puma'
 group :development do
     gem "rerun"
 end
+
+group :development do
+  gem "pry"
+end
