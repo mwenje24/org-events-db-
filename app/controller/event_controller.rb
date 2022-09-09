@@ -18,4 +18,20 @@ class EventController < Sinatra::Base
         )
         event.to_json
     end
+
+    patch '/events/:id' do
+        event = Event.find(params[:id])
+        event.update(
+            title: params[:title],
+            category: params[:category],
+            location: params[:location],
+            time: params[:time],
+            event_owner_id: params[:event_owner_id],
+            description: params[:description],
+            fee: params[:fee],
+            date: params[:date],
+            image: params[:image]
+        )
+        event.to_json
+    end
 end
