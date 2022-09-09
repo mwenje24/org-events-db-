@@ -13,4 +13,14 @@ class AttendeesController < Sinatra::Base
         attendee.to_json
     end
 
+    patch '/attendees/:id' do
+        attendee = Attendee.find(params[:id])
+        attendee.update(
+            name: params[:name],
+            email: params[:email],
+            event_id: params[:event_id]
+        )
+        attendee.to_json
+    end
+
 end
