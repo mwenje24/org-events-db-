@@ -1,5 +1,16 @@
 class AttendeesController < Sinatra::Base
-    get '/attendees/' do
-        "attendees here"
+    get '/attendees' do
+        attendees = Attendee.all.order(:name)
+        attendees.to_json
     end
+
+    post '/attendees' do
+        attendee = Attendee.create(
+          name: params[:name],
+          email: params[:email],
+          event_id: params[:event_id]
+        )
+        attendee.to_json
+    end
+
 end
