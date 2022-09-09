@@ -1,4 +1,7 @@
 class EventController < Sinatra::Base
+
+    set :default_content_type, 'application/json'
+
     get '/events' do
         events = Event.all.order(:date)
         events.to_json
@@ -18,6 +21,7 @@ class EventController < Sinatra::Base
         )
         event.to_json
     end
+
 
     patch '/events/:id' do
         event = Event.find(params[:id])

@@ -11,6 +11,8 @@ use Rack::Cors do
     end
 end
 
+# use Rack::JSONBodyParser
+
 use OrganizerController
 use AttendeesController
 run EventController

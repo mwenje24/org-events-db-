@@ -1,7 +1,11 @@
 
 # Organizer.create(organizer_name: "Moringa", organizer_email: "moringaschool@gmail.com", password: "moringa")
 # Organizer.create(organizer_name: "Google", organizer_email: "google@gmail.com", password: "google")
+# Organizer.create(organizer_name: "Andy Muyu", organizer_email: "andy@gmail.com", password: "andy")
 # Event.create(title: "IOT introduction", category: "educational", location: "Ihub", time: "4.00 - 6.00pm", event_owner_id: 1, description: "Welcome", fee: 0, date: "4.10.2020", image: "https://www.simplilearn.com/ice9/free_resources_article_thumb/iot_devices.jpg")
 # Event.create(title: "Understanding the information prcessing cycle", category: "educational", location: "KICC", time: "10.00 am - 12.00pm", event_owner_id: 1, description: "All are Welcome", fee: 5, date: "1.10.2020", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8Nadquo_BKBjTJax3iocFjvM8B5vSBh_iA&usqp=CAU")
+# Event.create(title: "Fast and Furious ten launch", category: "hangout/chill", location: "All Cinema", time: "8.00pm", event_owner_id: 3, description: "Just fun and more fun", fee: 3, date: "1.11.2020", image: "https://theubj.com/wp-content/uploads/2022/05/fast.jpg")
+# Event.create(title: "Hacking tour", category: "hangout/chill", location: "Mt. Longonot", time: "2 days", event_owner_id: 3, description: "The sky is the limit", fee: 100, date: "15.11.2020", image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/10/15/09/istock-483629308.jpg?quality=75&width=982&height=726&auto=webp")
+# Event.create(title: "Future of AI", category: "talkshows", location: "Bomas Of Kenya", time: "10.00am - 5.00pm", event_owner_id: 2, description: "We need to understant the pros and cons of what the future holds for us in AI", fee: 10, date: "15.10.2020", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLOnsmX1rDt1BuUJ4prjz_73LmdYt5ropdFCtUXbgTmt8eT0OP-Qbik9Nl32bholJ369U&usqp=CAU")
 # Event.destroy_all
 # Attendee.create(name: "Mwenje David", email: "mwenje24@gmail.com", event_id: 4)
