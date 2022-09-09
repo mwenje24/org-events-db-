@@ -7,6 +7,15 @@ class OrganizerController < Sinatra::Base
         organizers.to_json
     end
 
+    post '/organizers' do
+        organizer = Orginizer.create(
+          organizer_name: params[:organizer_name],
+          organizer_email: params[:organizer_email],
+          password: params[:password],
+        )
+        organizer.to_json
+    end
+
 
     # get '/organizers/:id' do
     #     # look up the game in the database using its ID
