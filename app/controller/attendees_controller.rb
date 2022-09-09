@@ -23,4 +23,10 @@ class AttendeesController < Sinatra::Base
         attendee.to_json
     end
 
+    delete '/attendees/:id' do
+        attendee = attendee.find(params[:id])
+        attendee.destroy
+        attendee.to_json
+    end
+
 end
