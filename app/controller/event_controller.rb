@@ -8,6 +8,7 @@ class EventController < Sinatra::Base
     end
 
     post '/events' do
+        # byebug
         event = Event.create(
           title: params[:title],
           category: params[:category],

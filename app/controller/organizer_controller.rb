@@ -8,10 +8,11 @@ class OrganizerController < Sinatra::Base
     end
 
     post '/organizers' do
-        organizer = Orginizer.create(
+        # byebug
+        organizer = Organizer.create(
           organizer_name: params[:organizer_name],
           organizer_email: params[:organizer_email],
-          password: params[:password],
+          password: params[:password]
         )
         organizer.to_json
     end
